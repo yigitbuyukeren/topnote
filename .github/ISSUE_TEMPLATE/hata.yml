@@ -1,0 +1,32 @@
+name: Hata bildirimi
+description: Bir şey beklediğin gibi çalışmıyor
+title: "Hata: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Lütfen kişisel veri, konum, fotoğraf veya sohbet içeriği paylaşma; gerekiyorsa örneği anonimleştir."
+  - type: input
+    attributes:
+      label: "macOS sürümü ve Mac modeli"
+      description: "Örn. macOS 15, Apple Silicon"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "Topnote sürümü"
+      description: "Menü çubuğu ikonundan veya sürüm sayfasından"
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Ne oldu?"
+      description: "Beklediğin ve gerçekleşen davranış."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Nasıl tekrarlanır?"
+      description: "Adım adım."
+    validations:
+      required: true
