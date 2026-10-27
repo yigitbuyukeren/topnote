@@ -1,3 +1,10 @@
+<a href="https://github.com/yigitbuyukeren/minik-not">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.jpg">
+    <img src="docs/banner-light.jpg" width="100%" alt="Minik Not: Mac için her zaman en üstte duran küçük not kağıdı. Tam ekran uygulamaların üstünde bile kalır, bağımlılıksız, MIT lisanslı.">
+  </picture>
+</a>
+
 # 📝 Minik Not
 
 Mac için küçük bir yapışkan not kağıdı. Ekranın köşesinde **her zaman en üstte** durur: pencere değiştirsen, başka masaüstüne geçsen, hatta bir uygulamayı tam ekran yapsan bile yerinden kıpırdamaz.
