@@ -11,6 +11,10 @@ Mac için küçük bir yapışkan not kağıdı. Ekranın köşesinde **her zama
 
 Tek not, hesap yok, sunucu yok, bağımlılık yok. Her şey yalnızca bu Mac'te tutulur.
 
+<p align="center"><img src="docs/renkler.png" width="720" alt="Topnote: aynı not kağıdı sarı, pembe ve mavi renklerde"></p>
+
+<p align="center"><sub>Gerçek uygulamadan alınmış pencere görüntüleri; metin örnektir.</sub></p>
+
 ## Özellikler
 
 - 📌 **Her zaman üstte**: tüm pencerelerin, tüm masaüstlerinin ve tam ekran uygulamaların üstünde. İstersen tek tıkla kapatırsın.
