@@ -1,7 +1,7 @@
 import AppKit
 import Carbon.HIToolbox
 import Combine
-import MinikNotCore
+import TopnoteCore
 import ServiceManagement
 import SwiftUI
 
@@ -104,7 +104,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private func setUpStatusItem() {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         if let button = statusItem.button {
-            button.image = NSImage(systemSymbolName: "note.text", accessibilityDescription: "Minik Not")
+            button.image = NSImage(systemSymbolName: "note.text", accessibilityDescription: "Topnote")
         }
         let menu = NSMenu()
         menu.delegate = self
@@ -162,9 +162,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         let main = NSMenu()
 
         let app = NSMenu()
-        app.addItem(item("Minik Not Hakkında", #selector(NSApplication.orderFrontStandardAboutPanel(_:)), target: NSApp))
+        app.addItem(item("Topnote Hakkında", #selector(NSApplication.orderFrontStandardAboutPanel(_:)), target: NSApp))
         app.addItem(.separator())
-        app.addItem(item("Minik Not'u Gizle", #selector(NSApplication.hide(_:)), key: "h", target: NSApp))
+        app.addItem(item("Topnote'u Gizle", #selector(NSApplication.hide(_:)), key: "h", target: NSApp))
         app.addItem(item("Çıkış", #selector(NSApplication.terminate(_:)), key: "q", target: NSApp))
         main.addItem(submenuItem(app))
 

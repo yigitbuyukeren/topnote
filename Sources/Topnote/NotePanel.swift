@@ -1,5 +1,5 @@
 import AppKit
-import MinikNotCore
+import TopnoteCore
 
 /// Başlıksız, yuvarlak köşeli, her zaman üstte duran küçük pencere.
 final class NotePanel: NSPanel {

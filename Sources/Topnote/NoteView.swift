@@ -1,4 +1,4 @@
-import MinikNotCore
+import TopnoteCore
 import SwiftUI
 
 extension NoteColor {

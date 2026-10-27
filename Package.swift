@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "MinikNot",
+    name: "Topnote",
     platforms: [.macOS(.v13)],
     targets: [
-        .target(name: "MinikNotCore"),
-        .executableTarget(name: "MinikNot", dependencies: ["MinikNotCore"]),
-        .testTarget(name: "MinikNotCoreTests", dependencies: ["MinikNotCore"]),
+        .target(name: "TopnoteCore"),
+        .executableTarget(name: "Topnote", dependencies: ["TopnoteCore"]),
+        .testTarget(name: "TopnoteCoreTests", dependencies: ["TopnoteCore"]),
     ]
 )

@@ -1,5 +1,5 @@
 import XCTest
-@testable import MinikNotCore
+@testable import TopnoteCore
 
 final class NoteStorageTests: XCTestCase {
     private var dir: URL!

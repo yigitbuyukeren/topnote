@@ -1,11 +1,11 @@
-<a href="https://github.com/yigitbuyukeren/minik-not">
+<a href="https://github.com/yigitbuyukeren/topnote">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.jpg">
-    <img src="docs/banner-light.jpg" width="100%" alt="Minik Not: Mac için her zaman en üstte duran küçük not kağıdı. Tam ekran uygulamaların üstünde bile kalır, bağımlılıksız, MIT lisanslı.">
+    <img src="docs/banner-light.jpg" width="100%" alt="Topnote: Mac için her zaman en üstte duran küçük not kağıdı. Tam ekran uygulamaların üstünde bile kalır, bağımlılıksız, MIT lisanslı.">
   </picture>
 </a>
 
-# 📝 Minik Not
+# 📝 Topnote
 
 Mac için küçük bir yapışkan not kağıdı. Ekranın köşesinde **her zaman en üstte** durur: pencere değiştirsen, başka masaüstüne geçsen, hatta bir uygulamayı tam ekran yapsan bile yerinden kıpırdamaz.
 
@@ -28,7 +28,7 @@ macOS 13 veya üstü ve Xcode (ya da Command Line Tools) gerekir.
 scripts/build-app.sh --install
 ```
 
-Bu komut evrensel (Apple Silicon + Intel) `Minik Not.app` üretir ve `~/Applications` içine kopyalar. `--install` olmadan paket `build/` altında kalır.
+Bu komut evrensel (Apple Silicon + Intel) `Topnote.app` üretir ve `~/Applications` içine kopyalar. `--install` olmadan paket `build/` altında kalır.
 
 Uygulama Apple geliştirici hesabıyla imzalanmadığı için ilk açılışta macOS uyarı verirse uygulamaya sağ tıklayıp **Aç**'ı seç.
 
@@ -44,21 +44,21 @@ Uygulama Apple geliştirici hesabıyla imzalanmadığı için ilk açılışta m
 | Taşı / yeniden boyutlandır | başlığı sürükle / kenarları çek |
 | Gizle | `⌘W` ya da ✕ (not silinmez) |
 
-Not şuraya yazılır: `~/Library/Application Support/Minik Not/not.json`.
+Not şuraya yazılır: `~/Library/Application Support/Topnote/not.json`.
 
 ## Geliştirme
 
 ```bash
 swift build          # derle
 swift test           # çekirdek (kayıt/yükleme) testleri
-swift run MinikNot   # doğrudan çalıştır
+swift run Topnote   # doğrudan çalıştır
 scripts/build-app.sh # .app paketi
 ```
 
 | Yol | Ne |
 |---|---|
-| `Sources/MinikNotCore` | Not modeli ve diske kayıt (AppKit'ten bağımsız, test edilir) |
-| `Sources/MinikNot` | Uygulama: panel, SwiftUI görünümü, menüler, global kısayol |
+| `Sources/TopnoteCore` | Not modeli ve diske kayıt (AppKit'ten bağımsız, test edilir) |
+| `Sources/Topnote` | Uygulama: panel, SwiftUI görünümü, menüler, global kısayol |
 | `scripts/build-app.sh` | `.app` paketler ve geçici (ad-hoc) imzalar |
 | `scripts/make-icon.swift` | `Resources/AppIcon.icns` simgesini çizer |
 

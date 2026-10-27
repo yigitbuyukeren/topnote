@@ -1,6 +1,6 @@
 import Foundation
 
-/// Notu `~/Library/Application Support/Minik Not/not.json` dosyasında tutar.
+/// Notu `~/Library/Application Support/Topnote/not.json` dosyasında tutar.
 public struct NoteStorage {
     public let fileURL: URL
 
@@ -10,7 +10,7 @@ public struct NoteStorage {
 
     public static var defaultURL: URL {
         let base = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-        return base.appendingPathComponent("Minik Not", isDirectory: true).appendingPathComponent("not.json")
+        return base.appendingPathComponent("Topnote", isDirectory: true).appendingPathComponent("not.json")
     }
 
     /// Dosya yoksa varsayılanı döner. Bozuksa `.bozuk` uzantısıyla kenara alır, böylece metin silinmez.

@@ -1,6 +1,6 @@
 import AppKit
 import Combine
-import MinikNotCore
+import TopnoteCore
 
 /// Ekrandaki notun tek doğruluk kaynağı. Değişiklikler kısa bir gecikmeyle diske yazılır.
 final class NoteModel: ObservableObject {
@@ -26,7 +26,7 @@ final class NoteModel: ObservableObject {
         do {
             try storage.save(state)
         } catch {
-            NSLog("Minik Not: not kaydedilemedi: \(error.localizedDescription)")
+            NSLog("Topnote: not kaydedilemedi: \(error.localizedDescription)")
         }
     }
 
