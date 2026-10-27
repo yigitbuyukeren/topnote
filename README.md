@@ -22,6 +22,10 @@ Tek not, hesap yok, sunucu yok, bağımlılık yok. Her şey yalnızca bu Mac'te
 
 ## Kurulum
 
+### Hazır paket
+[Son sürümden](https://github.com/yigitbuyukeren/topnote/releases/latest) `Topnote-*.zip` dosyasını indir, aç ve `Topnote.app`'i Uygulamalar klasörüne sürükle. Paket Apple geliştirici hesabıyla imzalanmamıştır (ad-hoc imza); ilk açılışta uygulamaya sağ tıklayıp **Aç**'ı seç. Dosyanın bütünlüğü için sürüm sayfasındaki SHA-256 toplamını `shasum -a 256` ile karşılaştırabilirsin.
+
+### Kaynaktan derleme
 macOS 13 veya üstü ve Xcode (ya da Command Line Tools) gerekir.
 
 ```bash
@@ -46,11 +50,15 @@ Uygulama Apple geliştirici hesabıyla imzalanmadığı için ilk açılışta m
 
 Not şuraya yazılır: `~/Library/Application Support/Topnote/not.json`.
 
+## Kısayollar ve sınırlar
+
+Genel kısayol `⌃⌥N`'dir; başka bir uygulama aynı kısayolu kullanıyorsa çakışabilir. Uygulama tek bir not tutar ve notu şifrelemez; düz bir JSON dosyasında saklar, bu yüzden parola gibi gizli bilgileri yazma.
+
 ## Geliştirme
 
 ```bash
 swift build          # derle
-swift test           # çekirdek (kayıt/yükleme) testleri
+swift test           # çekirdek (kayıt/yükleme) testleri: 6 test; GitHub Actions macOS üzerinde de çalıştırır
 swift run Topnote   # doğrudan çalıştır
 scripts/build-app.sh # .app paketi
 ```
